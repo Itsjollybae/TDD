@@ -1,0 +1,12 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="Tests">
+            <directory>./tests</directory>
+            <filename>UserTableWrapperTest.php</filename>
+            <testsuite_loader>Tests</testsuite_loader>
+            <testcase class="UserTableWrapperTest">
+                <phpunit_version>8.5</phpunit_version>
+            </testcase>
+        </testsuites>
+    </testsuites>
+</phpunit>
