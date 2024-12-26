@@ -1,9 +1,16 @@
 {
-    "require": {},
-    "name": "TDD",
+    "require": {
+        "phpunit/phpunit": "^10.1"
+    },
+    "name": "vendot/ttdr",
+      "authors": [
+        {
+          "name": "Angelina",
+          "email": "itsjollybae@icloud.com"
+        }
+      ],
     "description": "My awesome project",
     "license": "MIT",
-    "authors": ["itsjollybae@icloud.com"],
     "repository": "https://github.com/Itsjollybae/TDD",
     "type": "project",
     "keywords": ["homework"]
