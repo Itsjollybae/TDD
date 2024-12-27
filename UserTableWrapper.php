@@ -10,8 +10,8 @@ class UserTableWrapper
 
     public function update(int $id, array $values): array
     {
-        if (!isset($this->rows[$id]) {
-            return [];
+        if (!isset($this->rows[$id])) {
+            throw new \Exception("User not found");
         }
         $this->rows[$id] = $values;
         return $this->rows[$id];
@@ -19,6 +19,9 @@ class UserTableWrapper
 
     public function delete(int $id): void
     {
+        if (!isset($this->rows[$id])) {
+            throw new \Exception("User not found");
+        }
         unset($this->rows[$id]);
     }
 
