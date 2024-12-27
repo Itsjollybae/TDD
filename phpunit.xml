@@ -1,12 +1,21 @@
-<phpunit>
-    <testsuites>
-        <testsuite name="Tests">
-            <directory>./tests</directory>
-            <filename>UserTableWrapperTest.php</filename>
-            <testsuite_loader>Tests</testsuite_loader>
-            <testcase class="UserTableWrapperTest">
-                <phpunit_version>8.5</phpunit_version>
-            </testcase>
-        </testsuites>
-    </testsuites>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="phpunit.xsd"
+         bootstrap="bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+
+   <testsuites>
+       <testsuite name="Application Test Suite">
+           <directory suffix=".php">./tests</directory>
+       </testsuite>
+   </testsuites>
+
+   <preferences>
+       <preference name="logging.dest" value="/tmp" />
+   </preferences>
+
 </phpunit>
